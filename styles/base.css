@@ -85,19 +85,12 @@ img{
     padding-left: 1rem;
 }
 
-h3{
+.wyoming{
     width: 26rem;
     text-align: center;
     font-weight: 500;
     font-size: large;
     border-bottom: 1px solid black;
-}
-
-h4{
-    font-weight: 400;
-    color: black;
-    text-align: center;
-    font-size: larger;
 }
 
 .flag{
