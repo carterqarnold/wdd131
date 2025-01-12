@@ -65,10 +65,17 @@ p{
     font-size: medium;
 }
 
-h3{
+.titleaboutme{
+    font-size: larger;
+    text-align: center;
+    font-weight: 400;
+}
+
+.secondcardtitle{
     font-weight: 400;
     color: black;
     text-align: center;
+    font-size: larger;
 }
 
 img{
@@ -76,10 +83,11 @@ img{
     padding-left: 1rem;
 }
 
-h4{
+.wyomingp{
     width: 26rem;
     text-align: center;
     font-weight: 500;
+    font-size: large;
     border-bottom: 1px solid black;
 }
 
