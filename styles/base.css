@@ -1,24 +1,25 @@
 body{
-    
+    grid-template-columns: 300px  1fr .75fr;
     font-family : "Roboto", system-ui;
     font-weight : 400;
     font-style : normal;
     font-size: larger;
-    margin: 0 12rem 0 12rem;
+    margin: 0 8rem 0 8rem;
 }
 
 header{
-    padding: 1.5rem;
-    height: 10rem;
-    background-color: rgb(68, 67, 67);
+    padding-top: 30px;
+    background-color: rgb(231, 22, 22);
+    text-align: center;
 }
 
 h1{
-    position: relative;
-    top: 0; left: 18rem;
     color: white;
-    font-size: larger;
-    font-weight: 600;
+    font-family: "Crimson Text", serif;
+    font-weight: 400;
+    font-style: normal;
+
+      
 }
 
 nav{
@@ -30,7 +31,8 @@ nav{
     font-family : "Alegreya Sans", sans-serif;
     font-weight : 400;
     font-style : normal;
-    margin: 3rem -1.5rem 0 -1.5rem;
+    position: relative;
+    top: 1.6rem
 }
 
 a{
@@ -39,14 +41,56 @@ a{
 }
 
 main{
-    height: 30rem;
-    background-color: lightgray;
+    background-color: rgb(250, 198, 237);
+    padding-top: 1.5rem;
 }
 
+.card{
+    display: inline-block;
+    border: 1px solid black;
+    width: 20rem;
+    margin: 1rem 4.5rem 1rem 4.5rem;
+    padding: .5rem 1rem 1rem 1rem;
+    text-align: left;
+}
+
+.aboutme{
+    width: 40rem;
+    margin: 1rem 4.5rem 1rem 4.5rem;
+    padding: .5rem 1rem 1rem 1rem;
+}
+
+p{
+    color: black;
+    font-size: medium;
+}
+
+h3{
+    font-weight: 400;
+    color: black;
+    text-align: center;
+}
+
+img{
+    float: right;
+    padding-left: 1rem;
+}
+
+h4{
+    width: 26rem;
+    text-align: center;
+    font-weight: 500;
+    border-bottom: 1px solid black;
+}
+
+.flag{
+    float: left;
+    padding: 0 1rem 0 0;
+}
 
 footer{
     padding: 1.5rem;
-    color: white;
-    background-color: rgb(68, 67, 67);
+    color: black;
+    background-color: rgb(143, 7, 161);
     text-align: center;
 }
