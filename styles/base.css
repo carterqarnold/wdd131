@@ -1,0 +1,52 @@
+body{
+    
+    font-family : "Roboto", system-ui;
+    font-weight : 400;
+    font-style : normal;
+    font-size: larger;
+    margin: 0 12rem 0 12rem;
+}
+
+header{
+    padding: 1.5rem;
+    height: 10rem;
+    background-color: rgb(68, 67, 67);
+}
+
+h1{
+    position: relative;
+    top: 0; left: 18rem;
+    color: white;
+    font-size: larger;
+    font-weight: 600;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    height: 4rem;
+    font-family : "Alegreya Sans", sans-serif;
+    font-weight : 400;
+    font-style : normal;
+    margin: 3rem -1.5rem 0 -1.5rem;
+}
+
+a{
+    color: white;
+    text-decoration-line: none;
+}
+
+main{
+    height: 30rem;
+    background-color: lightgray;
+}
+
+
+footer{
+    padding: 1.5rem;
+    color: white;
+    background-color: rgb(68, 67, 67);
+    text-align: center;
+}
