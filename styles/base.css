@@ -105,9 +105,9 @@ h4{
     padding: 0 1rem 0 0;
 }
 
-footer{
+footer .footer{
     padding: 1.5rem;
-    color: black;
+    color: white;
     background-color: rgb(143, 7, 161);
     text-align: center;
 }
