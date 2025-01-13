@@ -35,29 +35,47 @@ nav{
     top: 1.6rem
 }
 
-a{
+nav a:hover{
+    text-decoration: overline;
+}
+
+.navatags{
     color: white;
     text-decoration-line: none;
 }
 
+.wdevatags{
+    text-decoration-line: none;
+}
+
 main{
+    display: grid;
+    grid-template-columns: .5fr 2fr 1fr .5fr;
     background-color: rgb(250, 198, 237);
     padding-top: 1.5rem;
+    max-width: 84rem;
+    justify-content: space-around;
 }
 
 .card{
-    display: inline-block;
     border: 1px solid black;
     width: 20rem;
-    margin: 1rem 4.5rem 1rem 4.5rem;
     padding: .5rem 1rem 1rem 1rem;
-    text-align: left;
+}
+
+.wdevresources{
+    display: grid;
+    grid-template-rows: 1.5fr 2fr;
+    grid-column: 3;
+    margin: 1rem 4.5rem 1rem 4.5rem;
 }
 
 .aboutme{
+    grid-column: 2;
     width: 40rem;
     margin: 1rem 4.5rem 1rem 4.5rem;
     padding: .5rem 1rem 1rem 1rem;
+    text-align: left;
 }
 
 p{
@@ -98,9 +116,17 @@ img{
     padding: 0 1rem 0 0;
 }
 
-footer .footer{
+footer{
     padding: 1.5rem;
-    color: white;
     background-color: rgb(143, 7, 161);
     text-align: center;
+}
+
+.footer{
+    color: white;
+    font-size: large;
+}
+
+#lastModified{
+    color: white;
 }

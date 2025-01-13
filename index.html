@@ -10,15 +10,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;500&family=Crimson+Text&family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+    <script src="scripts/getdates.js" defer></script>
 </head>
 <body>
     <header>
         <h1>WDD 131 - Dynamic Web Fundamentals - Carter Arnold</h1>
         <nav>
-            <a href="https://www.linkedin.com/">LinkedIn</a>
-            <a href="https://byupw.instructure.com/">Canvas</a>
-            <a href="https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/10?lang=eng&id=p17#p5">Scripture</a>
-            <a href="finalproject.html">Final Project</a>
+            <a class="navatags" href="https://www.linkedin.com/">LinkedIn</a>
+            <a class="navatags" href="https://byupw.instructure.com/">Canvas</a>
+            <a class="navatags" href="https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/10?lang=eng&id=p17#p5">Scripture</a>
+            <a class="navatags" href="finalproject.html">Final Project</a>
         </nav>  
     </header>
     <main>
@@ -36,9 +37,15 @@
                 The population is a little more than 500,000. Worldwide Wyoming is best known for Yellowstone National Park.
             </p>
         </section>
-        <section class="card">
+        <section class="card wdevresources">
             <h2>Web Dev Resources</h2>
-            <img src="" alt="" width="200">
+            <ul>
+                <li><a class="wdevatags" href="https://www.w3schools.com/">W3 Schools</a></li>
+                <li><a class="wdevatags" href="https://css-tricks.com/">CSS Tricks</a></li>
+                <li><a class="wdevatags" href="https://placehold.co/">Image Placeholder</a></li>
+                <li><a class="wdevatags" href="https://dev.to/">Dev.to Community</a></li>
+            </ul>
+            
             <p></p>
         </section>
     </main>
@@ -46,8 +53,7 @@
         <p class="footer">
             ©️<span id="currentyear"></span> ⚽ Carter Arnold ⚽ Wyoming 
         </p>
-        <p id="lastmodified">
-
+        <p id="lastModified">
         </p>
     </footer>
 </body>
