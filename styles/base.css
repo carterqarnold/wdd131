@@ -46,13 +46,13 @@ nav a:hover{
 
 .wdevatags{
     text-decoration-line: none;
-    color: rgb(70, 69, 69);
+    color: #5F066B;
 }
 
 main{
     display: grid;
     grid-template-columns: .5fr 2fr 1fr .5fr;
-    background-color: rgb(250, 198, 237);
+    background-color: #fac6ed;
     padding-top: 1.5rem;
     max-width: 84rem;
     justify-content: space-around;
