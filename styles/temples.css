@@ -13,7 +13,7 @@ h1{
 
 }
 
-button{
+#menu{
     position: absolute;
     top: 2rem; right: 2rem;
     color: white;
@@ -22,22 +22,19 @@ button{
     font-size: larger;
     padding: .6rem;
     text-align: center;
+
 }
 
-button::before{
+#menu::before{
     content: "☰";
 }
 
-button.show::before{
+#menu.open::before{
     content: "X";
 }
-
-.show a{
+.open a{
     display: block;
-}
-
-.navigation li{
-    display: none;
+    background-color: #4b0082;
 }
 
 .navigation a:hover {
@@ -45,48 +42,57 @@ button.show::before{
     color: #d3d3d3;
 }
 
-.navigation a{
-    text-align: center;
-}
 
-a{
+
+.navigation a{
+    display: none;
+    text-align: center;
+    text-decoration: none; 
     color: white;
-    text-decoration: none;
     font-size: larger;
     font-weight: 300;
     letter-spacing: .05rem;
+    padding: 1rem;
+
+}
+
+.navigation{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   list-style: none;
 }
 
 main{
-    text-align: center;
-    max-width: 1075px;
+    max-width: 800px;
     margin: 0 auto;
+}
+
+.temple_imgs{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    padding: 0 0 3rem 0;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 25px;
+    place-items: center;
+
 }
 
 h2{
-    grid-column: 1/4;
+    text-align: center;
     margin-bottom: -.05rem;
     margin-top: 2.5rem;
 }
 
-figure{
-    margin: 1rem;
-}
+
 
 img{
     width: 100%;
     height: auto;
-}
-
-.billingstemple1{
-    grid-column: 1;
+    margin: .5rem;
 }
 
 figcaption{
     color: indigo;
+    text-align: center;
 }
 
 footer{

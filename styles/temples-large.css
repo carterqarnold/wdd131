@@ -1,20 +1,21 @@
 @media screen and (min-width: 850px)
 {
-    main{
-        display: grid;
-        grid-template-columns: repeat(a);
-        place-items: center;
-    }
-    .navigation{
-        text-align: center;
+    header{
         display: flex;
-        justify-content: space-evenly;
-        width: 35rem;
-        position: absolute;
-        top: 2.5rem;
-        right: 1rem;
+        align-items: center;
+        justify-content: space-between;
+
     }
-    button{
+    
+    .navigation{
+        flex-direction: row;
+    }
+    #menu{
         display: none;
+    }
+
+    .navigation a{
+        display: block;
+        flex: 1 1 100%;
     }
 }
