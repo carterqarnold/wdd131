@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>France</title>
+    <meta name="description" content="A Country Page that shows a picture and some data about that country, including the weather.">
+    <meta name="author" content="Carter Arnold">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;500&family=Crimson+Text&family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>France</h1>
+    </header>
+    <main>
+        <picture>
+            <source srcset="images/eiffel_tower_landscape.webp.webp" media="(min-width: 1350px)">
+            <source srcset="images/france.webp" media="(min-width: 800px)">
+            <img src="images/eiffel_tower_portrait.webp.webp" alt="france">
+        </picture>
+        <section class="data">
+            <h2 class="datah2">Data</h2>
+            <label for="Area">Area: </label>
+            <p>34543 square ft</p>
+            <label for="Population">Population: </label>
+            <p>34543 </p>
+            <label for="Capital">Capital: </label>
+            <p>Paris</p>
+            <label for="Languages">Languages: </label>
+            <p>French</p>
+            <label for="Currency">Currency: </label>
+            <p>34543 square ft</p>
+            <label for="Time Zone">Time Zone: </label>
+            <p>34543 square ft</p>
+            <label for="Calling Code">Calling Code: </label>
+            <p>34543 square ft</p>
+            <label for="Internet TLD">Internet TLD: </label>
+            <p>34543 square ft</p>
+        </section>
+        <section class="weather">
+            <h2 class="weatherh2">Weather</h2>
+            <label for="Temperature">Temperature: </label>
+            <p>34543 square ft</p>
+            <label for="Conditions">Conditions: </label>
+            <p>34543 </p>
+            <label for="Wind">Wind: </label>
+            <p>Paris</p>
+            <label for="Wind Chill">Wind Chill: </label>
+            <p>French</p>
+        </section>
+    </main>
+    <footer>
+        <p class="footer">
+            ©️<span id="currentyear"></span> 📷 Carter Arnold 📷 Wyoming 
+        </p>
+        <p id="lastModified">
+        </p>
+    </footer>
+    <script src="scripts/place.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+</body>
+</html>
