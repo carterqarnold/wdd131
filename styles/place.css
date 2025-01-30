@@ -1,3 +1,8 @@
+:root{
+    --mainyellowcolor: rgb(248, 220, 59);
+    --transparentbackground: rgba(250, 250, 250, 0);
+}
+
 body{
     max-width: 1200px;
     margin: 0 auto;
@@ -7,7 +12,7 @@ header{
     background-color: tan;
     text-align: center;
     padding: 1rem;
-    border-bottom: 1rem solid rgb(248, 220, 59);
+    border-bottom: 1rem solid var(--mainyellowcolor);
 }
 
 h1{
@@ -33,7 +38,7 @@ img{
 
 section{
     width: fit-content;
-    background-color: rgba(250, 250, 250, 0);
+    background-color: var(--transparentbackground);
     display: grid;
     grid-template-columns: 1.5fr 1fr;
     padding: 0 0rem 1rem 5rem;
@@ -51,7 +56,7 @@ section{
     font-style: normal;
     text-align: center;
     grid-column: 1/3;
-    background-color: rgba(250, 250, 250, 0);
+    background-color: var(--transparentbackground);
     color: rgb(97, 81, 124);
 }
 
@@ -65,6 +70,11 @@ section{
     font-style: normal;
 }
 
+.weatherh2::after{
+    background-color: black;
+    width: 3rem;
+}
+
 .weatherheader{
     padding: 1rem 0 1rem 6.5rem;
     margin: 1rem 3rem 1rem 1rem;
@@ -73,7 +83,7 @@ section{
     font-style: normal;
     text-align: center;
     grid-column: 1/3;
-    background-color: rgba(250, 250, 250, 0);
+    background-color: var(--transparentbackground);
     color: rgb(97, 81, 124);
     display: flex;
 }
@@ -103,15 +113,15 @@ footer{
     font-weight : 400;
     font-style : normal;
     font-size: larger;
+    text-align: center;
     padding: 1.5rem;
     background-color: rgb(7, 56, 161);
-    text-align: center;
     margin-top: -.3rem;
 }
 
 .footer{
-    color: white;
     font-size: large;
+    color: white;
 }
 
 #lastModified{
