@@ -76,7 +76,6 @@ section{
     background-color: none;
     color: rgb(97, 81, 124);
     display: flex;
-    justify-content: space-around;
 }
 
 .weathersvg{
