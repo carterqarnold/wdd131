@@ -52,6 +52,7 @@
         font-size: xx-large;
         margin-left: -15rem;
         margin-top: .8rem;
+        visibility: visible;
     }
 
     .weathersvg{
