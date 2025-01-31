@@ -48,8 +48,13 @@
         padding: .2rem 0 0 1rem;
     }
 
+    .emoji{
+        font-size: xx-large;
+        margin-left: -15rem;
+        margin-top: .8rem;
+    }
+
     .weathersvg{
-        grid-column: 3;
-        padding: .8rem 0 0 0rem;
+        visibility: hidden;
     }
 }

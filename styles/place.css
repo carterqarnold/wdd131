@@ -92,6 +92,10 @@ section{
     width: 3rem;
 }
 
+.emoji{
+    visibility: hidden;
+}
+
 label{
     font-family : "Roboto", system-ui;
     font-weight : 400;
