@@ -1,5 +1,5 @@
 body{
-    font-family: "Roboto", serif;
+    font-family: "Roboto", sans-serif;
 }
 
 header{
@@ -38,6 +38,14 @@ h1{
     background-color: #4b0082;
 }
 
+.navigation{
+    display: none;
+}
+
+.navigation.open{
+    display: block;
+}
+
 nav::before{
     display: none;
 }
@@ -49,7 +57,7 @@ nav::before{
 
 nav {
     position: absolute;
-    top: 0.5rem; right: 1rem;
+    right: 1rem;
     display: block;
     text-align: center;
     width: 100%;
@@ -80,7 +88,7 @@ figure{
     margin: .5rem;
 }
 
-image{
+img{
     width: 100%;
 }
 

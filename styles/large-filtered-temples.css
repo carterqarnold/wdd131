@@ -9,11 +9,12 @@
 
     nav{
         width: fit-content;
+        position: relative;
     }
 
     .navigation{
         display: flex;
-        justify-self: center;
+        justify-content: center;
         position: relative;
      }
 
@@ -26,7 +27,5 @@
         flex: 1 1 100%;
     }
 
-    main{
-        align-items: center;
-    }
+   
 }
