@@ -88,7 +88,7 @@ figure{
     display: inline-block;
     height: auto;
     padding: 1rem;
-    background-color: gray;
+    background-color: rgb(221, 218, 218);
     flex-wrap: wrap;
     height: 30rem;
 }
