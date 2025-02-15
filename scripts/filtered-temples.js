@@ -1,4 +1,3 @@
-
 let today = new Date();
 document.querySelector("#currentyear").innerHTML = `&copy;${today.getFullYear()}`;
 document.getElementById("lastModified").textContent = `Last Modification: ${document.lastModified}`;
@@ -74,7 +73,7 @@ const temples = [
         dedicated: "1984, October, 19",
         area: 44207,
         imageUrl:
-        "https://churchofjesuschristtemples.org/assets/img/temples/dallas-texas-temple/dallas-texas-temple-51578.jpg"
+        "https://churchofjesuschristtemples.org/assets/img/temples/dallas-texas-temple/dallas-texas-temple-51578-thumb.jpg"
     },
     {
         templeName: "Concepción Chile Temple",
@@ -82,7 +81,7 @@ const temples = [
         dedicated: "2018, October, 28",
         area: 23095,
         imageUrl:
-        "https://churchofjesuschristtemples.org/assets/img/temples/concepcion-chile-temple/concepcion-chile-temple-35983.jpg"
+        "https://churchofjesuschristtemples.org/assets/img/temples/concepcion-chile-temple/concepcion-chile-temple-35983-thumb.jpg"
     },
     {
         templeName: "Paris France Temple",
@@ -90,7 +89,7 @@ const temples = [
         dedicated: "2017, May, 21",
         area: 44175,
         imageUrl:
-        "https://churchofjesuschristtemples.org/assets/img/temples/paris-france-temple/paris-france-temple-2054.jpg"
+        "https://churchofjesuschristtemples.org/assets/img/temples/paris-france-temple/paris-france-temple-2054-thumb.jpg"
     }
     // Add more temple objects here...
   ];
@@ -101,14 +100,16 @@ const title = document.querySelector("#title");
 function displayTemple(temples){
     temples.forEach((one)=> {
         const templeFigure = document.createElement("figure");
+
         const templeH2 = document.createElement("h2");
         const templeInfo = document.createElement("div");
         const templeImg = document.createElement("img");
 
         templeH2.textContent = one.templeName;
         templeInfo.innerHTML += `<p>Location: ${one.location}</p>`
-        `<p>Dedication: ${one.dedicated}</p>`
-        `<p>Size: ${one.size}</p>`;
+        templeInfo.innerHTML += `<p>Dedication: ${one.dedicated}</p>`
+        templeInfo.innerHTML += `<p>Size: ${one.area} sqft</p>`;
+
         templeImg.setAttribute("src", one.imageUrl);
         templeImg.setAttribute("alt", one.templeName);
         templeImg.setAttribute("loading", "lazy");
@@ -125,6 +126,7 @@ function clearMain(){
 document.querySelector("#old").addEventListener("click", (a) => {
     const filteredTemples = temples.filter((one) => new Date(one.dedicated).getFullYear() < 1900);
     clearMain();
+
     title.innerHTML = a.target.textContent;
     displayTemple(filteredTemples);
 })
@@ -132,6 +134,7 @@ document.querySelector("#old").addEventListener("click", (a) => {
 document.querySelector("#new").addEventListener("click", (a) => {
     const filteredTemples = temples.filter((one) => new Date(one.dedicated).getFullYear() > 2000);
     clearMain();
+
     title.innerHTML = a.target.textContent;
     displayTemple(filteredTemples);
 })
@@ -139,6 +142,7 @@ document.querySelector("#new").addEventListener("click", (a) => {
 document.querySelector("#large").addEventListener("click", (a) => {
     const filteredTemples = temples.filter((one) => one.area > 90000);
     clearMain();
+
     title.innerHTML = a.target.textContent;
     displayTemple(filteredTemples);
 })
@@ -146,15 +150,14 @@ document.querySelector("#large").addEventListener("click", (a) => {
 document.querySelector("#small").addEventListener("click", (a) => {
     const filteredTemples = temples.filter((one) => one.area < 10000);
     clearMain();
+
     title.innerHTML = a.target.textContent;
     displayTemple(filteredTemples);
 })
-
 
 document.querySelector("#home").addEventListener("click", (a) => {
     clearMain();
     title.innerHTML = a.target.textContent;
     displayTemple(temples);
 })
-
 displayTemple(temples);

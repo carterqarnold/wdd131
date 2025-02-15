@@ -81,15 +81,16 @@ nav {
 
 main{
     text-align: center;
+
 }
 
 figure{
+    display: inline-block;
     height: auto;
-    margin: .5rem;
-}
-
-img{
-    width: 100%;
+    padding: 1rem;
+    background-color: gray;
+    flex-wrap: wrap;
+    height: 30rem;
 }
 
 figcaption{
