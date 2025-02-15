@@ -4,32 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Temple Album</title>
-    <meta name="description" content="temple imgs shown with navagation links at the top of the page that is called a temple album. the navigation links go into a hamberger menu after screen width gets to small.">
+    <meta name="description" content="temple imgs shown with navagation links at the top of the page that is called a temple album. the navigation links go into a hamberger menu after screen width gets to small. Temple cards are also created using javascript.">
     <meta name="author" content="Carter Arnold">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/temples.css">
-    <link rel="stylesheet" href="styles/temples-large.css">
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/large-filtered-temples.css">
 </head>
 <body>
     <header>
         <h1>Temple Album</h1>
-        <button id="menu" aria-label="Menu"></button>
+        <a id="menu"></a>
         <nav>
             <ul class="navigation">
-                <li><a href="temples.html">Home</a></li>
-                <li><a href="old.html">Old</a></li>
-                <li><a href="new.html">New</a></li>
-                <li><a href="large.html">Large</a></li>
-                <li><a href="small.html">Small</a></li>
+                <li><a class="home" href="#">Home</a></li>
+                <li><a class="old" href="#">Old</a></li>
+                <li><a class="new" href="#">New</a></li>
+                <li><a class="large" href="#">Large</a></li>
+                <li><a class="small" href="#">Small</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <h2>Home</h2>
+        <h2 id="title">Home</h2>
         <div class="temple_imgs">
-            <figure>
+        <!-- <figure>
                 <img src="images/billings_temple_lds.jpeg" alt="Billings Temple">
                 <figcaption>Billings Temple</figcaption>
             </figure>
@@ -64,16 +64,16 @@
             <figure>
                 <img src="images/tijuana_mexico_temple_rendering.jpeg" alt="Billings Temple">
                 <figcaption>Tijuana Mexico Temple Rendering</figcaption>
-            </figure>
+            </figure>-->
         </div>
     </main>
     <footer>
         <p class="footer">
-            ©️<span id="currentyear"></span> ⚽ Carter Arnold ⚽ Wyoming 
+            <span id="currentyear"></span> ⚽ Carter Arnold ⚽ Wyoming 
         </p>
         <p id="lastModified">
         </p>
     </footer>
-    <script src="scripts/temples.js" defer></script>
+    <script src="scripts/filtered-temples.js" defer></script>
 </body>
 </html>

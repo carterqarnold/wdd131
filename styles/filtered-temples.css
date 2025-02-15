@@ -1,0 +1,102 @@
+body{
+    font-family: "Roboto", serif;
+}
+
+header{
+    background-color: #4b0082;
+    color: white;
+    padding: .25rem 1rem .25rem 1rem;
+}
+
+h1{
+    font-weight: 400;
+    width: 100%;
+    align-self: center;
+}
+
+#menu{
+    position: absolute;
+    top: 2rem; right: 2rem;
+    color: white;
+    background-color: #4b0082;
+    border: none;
+    font-size: larger;
+    padding: .6rem;
+    text-align: center;
+}
+
+#menu::before{
+    content: "☰";
+}
+
+#menu.open::before{
+    content: "X";
+}
+
+.open a{
+    display: block;
+    background-color: #4b0082;
+}
+
+nav::before{
+    display: none;
+}
+
+.navigation a:hover {
+    text-decoration: overline;
+    color: #d3d3d3;
+}
+
+nav {
+    position: absolute;
+    top: none; right: 1rem;
+    display: block;
+    text-align: center;
+    width: 100%;
+}
+
+.navigation a{
+    display: block;
+    text-align: center;
+    text-decoration: none; 
+    color: white;
+    font-size: larger;
+    font-weight: 300;
+    letter-spacing: .05rem;
+    padding: 1rem;
+    list-style: none;
+}
+
+.navigation li{
+    list-style: none;
+}
+
+main{
+    text-align: center;
+}
+
+figure{
+    height: auto;
+    margin: .5rem;
+}
+
+image{
+    width: 100%;
+}
+
+figcaption{
+    color: indigo;
+    text-align: center;
+}
+
+footer{
+    padding: .25rem;
+    background-color: indigo;
+    color: white;
+    text-align: center;
+}
+
+.footer{
+    color: white;
+    font-size: large;
+}

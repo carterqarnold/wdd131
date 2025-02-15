@@ -13,3 +13,6 @@ if (temperture <= 10 && windSpeed > 4.8){
 else{
     windChillLabel.append("N/A");
 }
+let today = new Date();
+document.querySelector("#currentyear").innerHTML = `&copy;${today.getFullYear()}`;
+document.getElementById("lastModified").textContent = `Last Modification: ${document.lastModified}`;

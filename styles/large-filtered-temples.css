@@ -1,0 +1,32 @@
+@media screen and (min-width: 750px)
+{
+    header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+    }
+
+    nav{
+        width: fit-content;
+    }
+
+    .navigation{
+        display: flex;
+        justify-self: center;
+        position: relative;
+     }
+
+    #menu{
+        display: none;
+    }
+
+    .navigation a{
+        display: block;
+        flex: 1 1 100%;
+    }
+
+    main{
+        align-items: center;
+    }
+}
