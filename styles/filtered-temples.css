@@ -93,6 +93,10 @@ figure{
     height: 30rem;
 }
 
+img{
+    width: 100%;
+}
+
 figcaption{
     color: indigo;
     text-align: center;
