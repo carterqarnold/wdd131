@@ -1,0 +1,106 @@
+@media screen and (max-width: 700px){
+    div{
+        display: block;
+    }
+
+    .divquotes{
+        display: block;
+    }
+    
+    .logo{
+        width: 300px;
+    }
+
+    a{
+        padding: .5rem 2rem;
+    }
+
+    .navigation a:hover {
+        text-decoration: overline;
+        background-color: rgb(206, 38, 212);
+    }
+}
+@media screen and (max-width: 475px){
+    div{
+        display: block;
+    }
+    
+    .divquotes{
+        display: block;
+    }
+
+    .toph2{
+        margin: 1rem 0 -2rem 0;
+    }
+    
+    .firstquote{
+        visibility: hidden;
+        margin: 0 0 0 0;
+    }
+    
+    .quoteauthor{
+        margin: 0 0 1.5rem 0;
+    }
+
+    #menu{
+        position: absolute;
+        top: .8rem; left: .8rem;
+        color: white;
+        background-color: rgb(204, 6, 22);
+        border: none;
+        font-size: larger;
+        padding: .4rem;
+        text-align: center;
+    }
+    
+    #menu::before{
+        content: "☰";
+    }
+    
+    #menu.open::before{
+        content: "X";
+    }
+    
+    .open a{
+        display: block;
+        background-color: rgb(204, 6, 22);
+    }
+    
+    .navigation{
+        display: none;
+    }
+    
+    .navigation.open{
+        display: block;
+    }
+    
+    nav::before{
+        display: none;
+    }
+    
+    nav {
+        position: absolute;
+        right: 1rem;
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
+    
+    .navigation a{
+        display: block;
+        text-align: center;
+        text-decoration: none; 
+        color: white;
+        font-size: larger;
+        font-weight: 300;
+        letter-spacing: .05rem;
+        padding: 1rem;
+        margin: 0 0 0 1.5rem;
+        list-style: none;
+    }
+    
+    .navigation li{
+        list-style: none;
+    }
+    
+}
