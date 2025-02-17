@@ -13,7 +13,7 @@ hamButton.addEventListener("click", () => {
 const linksWImgs = [
     {
         link: "https://www.youtube.com/c/socialdanceonline",
-        danceLinkName: "Social Dance Youtube Channel",
+        danceLinkName: "Social Dance Youtube Videos",
         linkNumber: "1",
         imageUrl:
         "https://socialdanceonline.com/wp-content/uploads/Social-Dance-Online-Lessons.png"
