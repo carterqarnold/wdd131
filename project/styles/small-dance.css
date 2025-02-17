@@ -19,6 +19,12 @@
         text-decoration: overline;
         background-color: rgb(156, 28, 160);
     }
+
+    /* Online page */
+
+    .constanze{
+        margin: 1rem 0 2.5rem 0;
+    }
 }
 @media screen and (max-width: 475px){
     

@@ -270,3 +270,45 @@ footer{
     text-align: center;
     padding: 1rem;
 }
+
+/* Online page */
+
+.constanze{
+    margin: 1rem 0 .5rem 0;
+}
+
+.links{
+    margin-left: -1rem;
+    padding-left: 0;
+}
+
+.linkh2{
+    text-align: center;
+}
+
+.dancelinks{
+    margin-top: 2rem;
+    padding: 1rem 0;
+    font-size: larger;
+    list-style: none;
+}
+
+.onlineimgs{
+    width: 310px;
+}
+
+/* Public page */
+
+.headingtext{
+    font-family: "Lora", serif;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.dance{
+    margin-top: 2rem;
+}
+
+.dance1{
+    margin-bottom: 2rem;
+}
