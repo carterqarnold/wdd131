@@ -23,7 +23,7 @@ const linksWImgs = [
         danceLinkName: "Wikihow Ballroom Dance",
         linkNumber: "2",
         imageUrl:
-        "https://static.vecteezy.com/system/resources/previews/045/915/188/non_2x/silhouette-of-a-ballroom-couple-dancing-free-vector.jpg"
+        "https://img.freepik.com/free-vector/hand-drawn-ballroom-dancing-silhouette_23-2151018844.jpg?t=st=1739834072~exp=1739837672~hmac=b4cf02a8e5578ad9536f17b88804af8297c337e5c17da4b4232c38c7a7d11688&w=360"
     },
     {
         link: "https://jtdancestudio.com/how-to-ballroom-guide-to-learn-ballroom-dance/",
@@ -35,8 +35,6 @@ const linksWImgs = [
   ];
 
 const main = document.querySelector(".links");
-let numVisits = Number(window.localStorage.getItem("numVisits-ls")) || 0;
-
 
 function displayLinkWImg(linksWImgs){
     
@@ -71,7 +69,7 @@ function clearMain(){
     main.innerHTML = "";
 }
 
-document.querySelector("#onlineresources").addEventListener("click", (a) => {
+document.querySelector("#onlineresources").addEventListener("click", () => {
     const h2 = danceH2;    
     const linkfigure1 = linksWImgs.filter((one) => (one.linkNumber) > 2);    
     const linkfigure2 = linksWImgs.filter((one) => (one.linkNumber) < 3);
